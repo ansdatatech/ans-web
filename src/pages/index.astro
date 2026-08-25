@@ -1,0 +1,318 @@
+---
+// src/pages/index.astro
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="ANS DataTech | Web, Uygulama ve Veri Çözümleri">
+  
+  <!-- Siber Noktalı Arka Plan -->
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-30 pointer-events-none"></div>
+
+  <!-- 1. KAHRAMAN ALANI (Ne Yapıyoruz?) -->
+  <section class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 lg:pt-36">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      <!-- Sol Taraf: Metin ve Aksiyon -->
+      <div class="text-left space-y-8">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-sm font-bold shadow-sm backdrop-blur-sm">
+          <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
+          İhtiyacınıza Özel Siber Çözümler
+        </div>
+        
+        <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.15]">
+          İşinizi Dijitale, <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-sm">Verinizi Güce</span> Dönüştürün.
+        </h1>
+        
+        <p class="text-lg text-slate-400 font-medium leading-relaxed max-w-lg">
+          İhtiyacınıza özel, birbirinden bağımsız dijital çözümler üretiyoruz. Süreçlerinizi hızlandıracak modern teknolojilerle yanınızdayız.
+        </p>
+
+        <!-- Koyu Temalı Madde İmleri -->
+        <ul class="space-y-4 pt-2 pb-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span class="text-slate-400 font-medium"><strong class="text-slate-200">Kurumsal Web Siteleri:</strong> Modern, hızlı ve SEO uyumlu dijital vitrinler.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span class="text-slate-400 font-medium"><strong class="text-slate-200">Özel Web Uygulamaları:</strong> Süreçleri otomatize eden mobil uyumlu (PWA) paneller.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span class="text-slate-400 font-medium"><strong class="text-slate-200">Veri Analizi:</strong> Karmaşık verileri anlamlandıran akademik istatistiksel modeller.</span>
+          </li>
+        </ul>
+        
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="/iletisim" class="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 rounded-xl font-extrabold transition-all shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:-translate-y-0.5 flex items-center justify-center gap-2">
+            Projeyi Konuşalım
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+          <a href="/projeler" class="px-8 py-4 bg-slate-800/50 hover:bg-slate-800 text-slate-300 rounded-xl font-bold transition-all border border-slate-700 shadow-sm flex items-center justify-center">
+            Projelerimizi İnceleyin
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Taraf: Siber Veri Paneli -->
+      <div class="relative hidden lg:block group perspective-1000">
+        <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-500/20 to-blue-600/20 rounded-[2.5rem] blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+        <div class="relative w-full max-w-md mx-auto bg-[#0f172a]/90 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-7 shadow-2xl transition-transform duration-700 group-hover:-translate-y-2">
+          
+          <div class="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
+             <div class="flex gap-2 items-center">
+               <div class="w-2.5 h-2.5 rounded-full bg-slate-600 group-hover:bg-red-500 transition-colors"></div>
+               <div class="w-2.5 h-2.5 rounded-full bg-slate-600 group-hover:bg-yellow-500 transition-colors"></div>
+               <div class="w-2.5 h-2.5 rounded-full bg-slate-600 group-hover:bg-green-500 transition-colors"></div>
+             </div>
+             <div class="px-3 py-1.5 rounded-lg border border-slate-700/50 bg-slate-900/50 flex items-center justify-center shadow-inner">
+                <img src="/logo_2.png" alt="ANS DataTech" class="h-6 w-auto object-contain drop-shadow-[0_0_5px_rgba(6,182,212,0.6)]" />
+             </div>
+          </div>
+
+          <div class="space-y-5">
+             <div class="flex justify-between items-end">
+                <div>
+                  <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Gerçek Zamanlı Veri</p>
+                  <p class="text-3xl font-black text-white tracking-tight">84,592<span class="text-sm font-medium text-slate-500 ml-1">kayıt</span></p>
+                </div>
+                <span class="px-2.5 py-1 bg-cyan-900/40 text-cyan-400 text-[10px] font-bold rounded flex items-center gap-1.5 border border-cyan-800/50">
+                  <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_5px_#22d3ee]"></span> Çevrimiçi
+                </span>
+             </div>
+             <!-- Neon SVG Grafik -->
+             <div class="h-32 w-full relative mt-2 bg-slate-950/50 rounded-xl border border-slate-800 p-2 overflow-hidden">
+                <svg class="w-full h-full absolute inset-0 z-10 overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="line-grad-elite" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#3b82f6" />
+                      <stop offset="100%" stop-color="#22d3ee" />
+                    </linearGradient>
+                    <linearGradient id="area-grad-elite" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.2" />
+                      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 90 Q 20 80, 40 50 T 70 35 T 100 15 L 100 100 L 0 100 Z" fill="url(#area-grad-elite)" />
+                  <path d="M0 90 Q 20 80, 40 50 T 70 35 T 100 15" fill="none" stroke="url(#line-grad-elite)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
+                  <circle cx="40" cy="50" r="3.5" fill="#0f172a" stroke="#3b82f6" stroke-width="2" class="animate-pulse shadow-[0_0_5px_#3b82f6]"/>
+                  <circle cx="70" cy="35" r="3.5" fill="#0f172a" stroke="#0ea5e9" stroke-width="2" class="animate-pulse" style="animation-delay: 200ms;"/>
+                  <circle cx="100" cy="15" r="3.5" fill="#0f172a" stroke="#22d3ee" stroke-width="2" class="animate-pulse shadow-[0_0_8px_#22d3ee]" style="animation-delay: 400ms;"/>
+                </svg>
+             </div>
+          </div>
+        </div>
+
+        <!-- Yazılım Paneli -->
+        <div class="absolute -bottom-8 -right-6 md:-right-12 w-72 bg-[#020617] rounded-2xl p-5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-slate-800 transform transition-transform duration-700 group-hover:-translate-y-4 group-hover:-translate-x-2 z-20">
+           <div class="flex justify-between items-center mb-4 border-b border-slate-800 pb-3">
+              <div class="flex gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-700"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-700"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-700"></div>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono tracking-tight">model_deploy.ts</span>
+           </div>
+           <div class="font-mono text-xs leading-loose">
+             <div><span class="text-purple-400">import</span> <span class="text-cyan-300">&#123; serve &#125;</span> <span class="text-purple-400">from</span> <span class="text-green-400">'@ans/core'</span>;</div>
+             <div class="mt-2 text-slate-500">/* Veri modelini PWA'ya bağla */</div>
+             <div class="mt-1"><span class="text-blue-400">const</span> <span class="text-yellow-300">app</span> <span class="text-slate-300">=</span> <span class="text-blue-300">serve</span>(&#123;</div>
+             <div class="ml-4 text-cyan-300">model: <span class="text-green-400">'v2.4-demographic'</span>,</div>
+             <div class="ml-4 text-cyan-300">secure: <span class="text-orange-400">true</span></div>
+             <div>&#125;);</div>
+           </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 2. GÜVEN ALANI: HAKKIMIZDA & TEKNOLOJİ GÜCÜ (Arka plan şeffaf yapıldı) -->
+  <section class="border-t border-slate-800/80 py-24 relative z-10 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Sol Taraf: Gizemli ve Güçlü Metin -->
+        <div class="space-y-6">
+          
+          <!-- HATA ÇÖZÜLDÜ: Mavi Parıldayan Nokta Eklendi -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-bold tracking-widest uppercase shadow-sm backdrop-blur-sm">
+            <span class="flex h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
+            Verinin ve Yazılımın Gücü
+          </div>
+          
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            17 Yıllık Tecrübe, <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Modern Dijital Mimari.</span>
+          </h2>
+          
+          <div class="space-y-4 text-slate-400 font-medium leading-relaxed">
+            <p>
+              ANS DataTech; 17 yılı aşkın sistem yönetimi, veri analizi ve istatistiksel modelleme tecrübesinin, en güncel web ve yazılım teknolojileriyle harmanlandığı bir dijital mimari merkezidir.
+            </p>
+            <p>
+              İsimlerden ve birbirinin kopyası hazır şablonlardan ziyade, <strong class="text-slate-200">matematiğin ve temiz kodun gücüne</strong> inanıyoruz. Doktora (PhD) düzeyindeki analitik araştırma disiplinimizi; yüksek performanslı kurumsal web sitelerine, süreçlerinizi otomatize eden mobil uyumlu uygulamalara (PWA) ve karmaşık verileri işleyen bulut tabanlı SaaS platformlarına entegre ediyoruz.
+            </p>
+            <p>
+              Dijital varlığınızı sadece şık bir vitrine değil; veriyi okuyan, geleceği modelleyen ve tıkır tıkır işleyen bir dijital makineye dönüştürüyoruz.
+            </p>
+          </div>
+
+          <!-- Sayısal Güç Göstergesi -->
+          <div class="grid grid-cols-2 gap-6 pt-4">
+             <div class="border-l-2 border-cyan-500 pl-4">
+                <div class="text-3xl font-black text-white">17+</div>
+                <div class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1">Yıllık Sektör Tecrübesi</div>
+             </div>
+             <div class="border-l-2 border-blue-500 pl-4">
+                <div class="text-3xl font-black text-white">PhD</div>
+                <div class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1">Analitik & Yazılım Disiplini</div>
+             </div>
+          </div>
+        </div>
+
+        <!-- Sağ Taraf: Teknoloji Yığını (Tech Stack) -->
+        <div class="bg-[#0f172a] rounded-3xl p-8 lg:p-10 border border-slate-800 shadow-[0_0_30px_rgba(0,0,0,0.3)] hover:border-slate-700 transition-colors">
+           <h3 class="text-sm font-bold text-slate-300 uppercase tracking-widest mb-8 text-center border-b border-slate-800 pb-4">Kullandığımız Teknolojiler</h3>
+           
+           <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+              <!-- Veri ve Analiz -->
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:border-blue-500/50 transition-all">
+                    <span class="font-black text-xl">R</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">R Language</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-yellow-400 group-hover:border-yellow-500/50 transition-all">
+                    <span class="font-black text-xl">Py</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">Python</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-indigo-400 group-hover:border-indigo-500/50 transition-all">
+                    <span class="font-black text-sm">SPSS</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">SPSS Model</span>
+              </div>
+              <!-- Web ve Sistem -->
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-orange-400 group-hover:border-orange-500/50 transition-all">
+                    <span class="font-black text-xl">A</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">Astro.js</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-green-400 group-hover:border-green-500/50 transition-all">
+                    <span class="font-black text-xl">Dj</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">Django</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 group">
+                 <div class="w-12 h-12 bg-slate-900 rounded-xl border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-cyan-400 group-hover:border-cyan-500/50 transition-all">
+                    <span class="font-black text-xl">Tb</span>
+                 </div>
+                 <span class="text-[10px] font-bold text-slate-500 tracking-wider">Tableau</span>
+              </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. KANIT ALANI: TEK SATIR MİNİMAL PROJELER GALERİSİ -->
+  <section id="projeler" class="border-t border-slate-800/80 py-24 relative z-10 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Başlık ve Yönlendirme Linki (Yan Yana) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div class="max-w-2xl text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-sm font-semibold shadow-sm mb-4 backdrop-blur-sm">
+            <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
+            Referanslarımız
+          </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Hayata Geçirdiğimiz Projeler</h2>
+          <p class="text-slate-400 font-medium">Farklı sektörler için geliştirdiğimiz özel dijital çözümlere göz atın.</p>
+        </div>
+        
+        <a href="/projeler" class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-xl font-bold hover:bg-cyan-500 hover:text-slate-900 transition-all whitespace-nowrap mb-2">
+          Tüm Detayları İncele
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </a>
+      </div>
+
+      <!-- Tek Satır (4 Kolonlu) Tıklanabilir Poster Kartlar -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- PROJE 1: AHALTEKE -->
+        <a href="/projeler" class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-[#0f172a] hover:border-cyan-500/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] block h-72">
+           <img src="/ahal-web.png" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" alt="Ahalteke" />
+           <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/60 to-transparent"></div>
+           <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-500 group-hover:-translate-y-2">
+              <span class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-2 block drop-shadow-md">SaaS Otomasyon</span>
+              <h3 class="text-xl font-bold text-white leading-tight">Ahalteke Turnuva Sistemi</h3>
+           </div>
+        </a>
+
+        <!-- PROJE 2: u5mTürkiye -->
+        <a href="/projeler" class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-[#0f172a] hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] block h-72">
+           <img src="/u5m-map.png" class="absolute inset-0 w-full h-full object-cover object-left-top opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" alt="u5mTürkiye" />
+           <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/60 to-transparent"></div>
+           <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-500 group-hover:-translate-y-2">
+              <span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-2 block drop-shadow-md">Veri Analizi</span>
+              <h3 class="text-xl font-bold text-white leading-tight">u5mTürkiye Platformu</h3>
+           </div>
+        </a>
+        
+        <!-- PROJE 3: Kadızade -->
+        <a href="/projeler" class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-[#0f172a] hover:border-purple-500/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] block h-72">
+           <img src="/kadizade-web.png" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" alt="Kadızade" />
+           <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/60 to-transparent"></div>
+           <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-500 group-hover:-translate-y-2">
+              <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider mb-2 block drop-shadow-md">Kurumsal Web & Blog</span>
+              <h3 class="text-xl font-bold text-white leading-tight">Kadızade Dijital Vitrin</h3>
+           </div>
+        </a>
+
+        <!-- PROJE 4: Bek Akademi -->
+        <a href="/projeler" class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-[#0f172a] hover:border-green-500/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] block h-72">
+           <img src="/bek-web.png" class="absolute inset-0 w-full h-full object-cover object-top opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" alt="Bek Akademi" />
+           <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/60 to-transparent"></div>
+           <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-500 group-hover:-translate-y-2">
+              <span class="text-[10px] font-bold text-green-400 uppercase tracking-wider mb-2 block drop-shadow-md">Kurumsal Web Sitesi</span>
+              <h3 class="text-xl font-bold text-white leading-tight">Bek Eğitim Akademi</h3>
+           </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. ÇAĞRI ALANI: KARANLIK TEMA CTA -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 relative z-10 bg-transparent">
+    <div class="max-w-5xl mx-auto rounded-3xl p-10 lg:p-14 text-center shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden bg-[#0f172a] border border-slate-800">
+      
+      <!-- Karanlık Kutuda Işık Oyunları -->
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-900/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">
+          Projeniz İçin Hazır Mısınız?
+        </h2>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8 font-medium leading-relaxed">
+          Siz işinize odaklanın, dijital mimarinizi ve veri altyapınızı biz inşa edelim.
+        </p>
+        <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 rounded-xl font-extrabold transition-transform hover:-translate-y-1 shadow-[0_0_15px_rgba(6,182,212,0.4)]">
+          Projeyi Konuşalım
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>

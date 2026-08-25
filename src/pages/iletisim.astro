@@ -1,0 +1,167 @@
+---
+// src/pages/iletisim.astro
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="İletişim | ANS DataTech">
+  
+  <!-- Siber Noktalı Arka Plan -->
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-30 pointer-events-none"></div>
+
+  <section class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24">
+    
+    <!-- Ortalanmış Başlık ve Neon Rozet -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-sm font-semibold shadow-sm mb-6 backdrop-blur-sm">
+        <span class="flex h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
+        Bizimle İletişime Geçin
+      </div>
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">Projenizi Konuşalım</h1>
+      <p class="text-lg text-slate-400 font-medium">Veri analizi, web uygulamaları veya kurumsal web sitesi ihtiyaçlarınız için bize ulaşın. En kısa sürede geri dönüş yapalım.</p>
+    </div>
+
+    <!-- Ortalanmış Karanlık İletişim Kartı -->
+    <div class="max-w-5xl mx-auto grid lg:grid-cols-3 gap-10 bg-[#0f172a]/90 backdrop-blur-xl rounded-3xl p-8 lg:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-800">
+      
+      <!-- Sol Taraf: İletişim Bilgileri (1 Kolon) -->
+      <div class="lg:col-span-1 space-y-6">
+        <h3 class="text-2xl font-bold text-white mb-6">İletişim Kanalları</h3>
+        
+        <div class="flex items-start gap-4 group">
+          <div class="w-11 h-11 bg-slate-900 text-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-slate-700 group-hover:border-cyan-500/50 transition-colors shadow-[0_0_10px_rgba(6,182,212,0.1)]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">E-Posta</p>
+            <a href="mailto:ansdatatech@gmail.com" class="text-slate-300 font-semibold hover:text-cyan-400 transition-colors text-sm break-all">ansdatatech@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 group">
+          <div class="w-11 h-11 bg-slate-900 text-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-slate-700 group-hover:border-cyan-500/50 transition-colors shadow-[0_0_10px_rgba(6,182,212,0.1)]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Lokasyon</p>
+            <p class="text-slate-300 font-semibold text-sm">Ankara, Türkiye</p>
+          </div>
+        </div>
+        
+        <div class="p-5 bg-slate-900/50 rounded-2xl border border-slate-800 mt-6 relative overflow-hidden">
+          <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-cyan-500/10 rounded-full blur-xl"></div>
+          <p class="text-xs text-slate-400 font-medium leading-relaxed relative z-10">
+            <strong class="text-white block mb-1">Çalışma Prensibimiz:</strong>
+            İhtiyaçlarınızı analiz ediyor, net yol haritası ve şeffaf bütçelendirme ile projenizi hayata geçiriyoruz.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sağ Taraf: JavaScript Destekli Şık Form -->
+      <div class="lg:col-span-2">
+        <form id="form" method="POST" class="space-y-5">
+          
+          <input type="hidden" name="access_key" value="418cb891-3cb6-421e-a9c0-773715c515a8">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="space-y-1.5">
+              <label for="name" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Adınız Soyadınız</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 placeholder-slate-600 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-sm" placeholder="Örn: Ahmet Yılmaz" required>
+            </div>
+            <div class="space-y-1.5">
+              <label for="email" class="text-xs font-bold text-slate-400 uppercase tracking-wider">E-Posta Adresiniz</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 placeholder-slate-600 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-sm" placeholder="ornek@sirket.com" required>
+            </div>
+          </div>
+          
+          <div class="space-y-1.5">
+            <label for="subject" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Hizmet Alanı</label>
+            <select id="subject" name="subject" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-sm cursor-pointer appearance-none">
+              <option value="Kurumsal Web Sitesi">Kurumsal Web Sitesi</option>
+              <option value="Özel Web Uygulaması / Yönetim Paneli">Özel Web Uygulaması / Yönetim Paneli</option>
+              <option value="İstatistiksel Veri Analizi & Modelleme">İstatistiksel Veri Analizi & Modelleme</option>
+              <option value="Genel Danışmanlık">Genel Danışmanlık</option>
+            </select>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="message" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Proje Detayları</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 placeholder-slate-600 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-sm resize-none" placeholder="İhtiyaçlarınızı kısaca özetleyin..." required></textarea>
+          </div>
+
+          <!-- Gönder Butonu -->
+          <button type="submit" id="submit-btn" class="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 rounded-xl font-extrabold transition-all shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm cursor-pointer">
+            Mesajı Gönder
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+
+          <!-- Durum Mesajı Alanı (Gizli Başlar) -->
+          <div id="result" class="hidden text-center text-sm font-semibold p-4 rounded-xl border"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORM ASENKRON GÖNDERİM SCRİPTİ -->
+  <script>
+    const form = document.getElementById('form') as HTMLFormElement;
+    const result = document.getElementById('result');
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+
+    form?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if(submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Gönderiliyor...";
+      }
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      if(result) {
+        result.className = "hidden text-center text-sm font-semibold p-4 rounded-xl border";
+        result.innerHTML = "Lütfen bekleyin...";
+      }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+          let jsonResponse = await response.json();
+          if (response.status == 200) {
+              if(result) {
+                result.className = "block text-center text-sm font-semibold p-4 rounded-xl bg-cyan-950/50 border-cyan-800 text-cyan-400";
+                result.innerHTML = "Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.";
+              }
+              form.reset();
+          } else {
+              if(result) {
+                result.className = "block text-center text-sm font-semibold p-4 rounded-xl bg-red-950/50 border-red-800 text-red-400";
+                result.innerHTML = jsonResponse.message || "Bir hata oluştu, lütfen tekrar deneyin.";
+              }
+          }
+      })
+      .catch(error => {
+          console.error(error);
+          if(result) {
+            result.className = "block text-center text-sm font-semibold p-4 rounded-xl bg-red-950/50 border-red-800 text-red-400";
+            result.innerHTML = "Bağlantı hatası oluştu. Lütfen daha sonra tekrar deneyin.";
+          }
+      })
+      .finally(() => {
+        if(submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `Mesajı Gönder <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>`;
+        }
+      });
+    });
+  </script>
+
+</MainLayout>
