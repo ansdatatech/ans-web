@@ -1,15 +1,27 @@
 ---
 // src/layouts/MainLayout.astro
 import '../styles/global.css';
-const { title = "ANS DataTech | Veri ve Bilişim Sistemleri" } = Astro.props;
+// description prop'u eklendi
+const { 
+  title = "ANS DataTech | Veri ve Bilişim Sistemleri",
+  description = "ANS DataTech; 17 yıllık tecrübe ile veri analizi, kurumsal web siteleri ve özel web uygulamaları (SaaS) geliştiren dijital mimari merkezidir."
+} = Astro.props;
 ---
 
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
+    
+    <!-- SEO Meta Etiketleri -->
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="ANS DataTech" />
+    
+    <!-- Google Search Console Doğrulama Kodu (Adım 4'te alacağınız kod buraya gelecek) -->
+    <!-- <meta name="google-site-verification" content="google-site-verification=Z8pXbj_mkVwdNsCvNuHV_45OQDPwVqxX-vTzKSyE7tk" /> -->
   </head>
   <!-- Koyu Tema Arka Planı -->
   <body class="bg-[#0b1120] text-slate-300 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900">
